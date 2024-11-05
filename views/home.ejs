@@ -1,5 +1,19 @@
 
     <%- include('./partials/header'); %>
-    Home Page
+    <div class="main-container">
+        <h1 class="mt-n1"> Hi dear vistor </h1>
+        <h3> Please select the functionality that you require by selecting 
+         from buttons bellow or <u> navbar </u> above.
+        </h3>
+
+        <div class="home-button-container">
+            <% pagesList.forEach((page, index) => { %>
+                <% if (index !== 0) { %>
+                <a type="button" href="<%= page %>" class="btn btn-primary btn-lg"><%= page %></a>
+                <% } %>
+            <%});%>
+        </div>
+        
+            </div>
     <%- include('./partials/footer'); %>
 
