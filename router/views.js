@@ -9,5 +9,6 @@ router.get(`/${pagesList[1]}`, uploadPageController);
 router.get(`/${pagesList[2]}`, formPageController);
 router.get(`/${pagesList[3]}`, findPageController);
 router.get(`/${pagesList[4]}`, aboutUsPageController);
+router.get(`/`, homePageController);
 
 module.exports = router;
