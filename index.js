@@ -1,5 +1,10 @@
 const express = require('express')
+const settingServer = require('./module/setting');
+const renderViews = require('./module/views');
+
 const app = express()
 
-app.get('/', (req, res) => res.send('Hello World!'))
+settingServer(app);
+renderViews(app);
+
 app.listen(process.env.PORT, () => console.log(`Example app listening on port ${process.env.PORT}!`))
