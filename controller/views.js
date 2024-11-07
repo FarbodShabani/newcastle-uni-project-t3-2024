@@ -1,3 +1,4 @@
+const formElements = require("../utils/invoiceForm");
 const pagesList = require("../utils/pageList");
 
 
@@ -15,7 +16,8 @@ const uploadPageController = (req, res) => res.render(pagesList[1], {
 
 const formPageController = (req, res) => res.render(pagesList[2], {
     pagesList,
-    activePage: pagesList[2]
+    activePage: pagesList[2],
+    formElements
 });
 
 const findPageController = (req, res) => res.render(pagesList[3], {
@@ -28,7 +30,12 @@ const aboutUsPageController = (req, res) => res.render(pagesList[4], {
     activePage: pagesList[4]
 });
 
+const showPageController = (req, res) => res.render('show', {
+    pagesList,
+    activePage: pagesList[4]
+});
 
 
 
-module.exports = {homePageController, aboutUsPageController, uploadPageController, findPageController, formPageController};
+
+module.exports = {homePageController, aboutUsPageController, uploadPageController, findPageController, formPageController, showPageController};
