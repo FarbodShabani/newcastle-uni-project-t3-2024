@@ -32,7 +32,8 @@ const aboutUsPageController = (req, res) => res.render(pagesList[4], {
 
 const showPageController = (req, res) => res.render('show', {
     pagesList,
-    activePage: "Show"
+    activePage: "Show",
+    invoiceId: req.query.id,
 });
 
 
