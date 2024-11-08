@@ -32,7 +32,7 @@ const aboutUsPageController = (req, res) => res.render(pagesList[4], {
 
 const showPageController = (req, res) => res.render('show', {
     pagesList,
-    activePage: pagesList[4]
+    activePage: "Show"
 });
 
 
