@@ -7,7 +7,7 @@ const reciveJsonFormInvoice = (req, res) => {
 
   console.log(body);
 
-  return res.redirect("./show");
+  return res.redirect("/show");
 };
 
 module.exports = { uploadInvoiceController, reciveJsonFormInvoice };
