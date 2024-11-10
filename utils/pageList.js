@@ -1,4 +1,4 @@
-const pagesList = ["home", "upload", "form", "find","about_us"];
+const pagesList = ["home", "upload", "form", "find","about_us", "show"];
 
 
 

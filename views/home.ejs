@@ -8,7 +8,7 @@
 
         <div class="home-button-container">
             <% pagesList.forEach((page, index) => { %>
-                <% if (index !== 0) { %>
+                <% if (index !== 0 && index !==5) { %>
                 <a type="button" href="<%= page %>" class="btn btn-primary btn-lg home-button"><%= page %></a>
                 <% } %>
             <%});%>

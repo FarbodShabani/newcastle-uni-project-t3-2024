@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title><%= activePage %> Page</title>
+
     <%- include('./head', {pagesList, activePage}); %>
   </head>
   <body>
@@ -23,15 +18,17 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
           <ul class="navbar-nav">
-            <% pagesList.forEach(page => { %>
+            <% pagesList.forEach((page, index) => { %>
+              <% if (index !== 5) { %>  
             <li class="nav-item">
               <a
-                class="nav-link <% if (page == activePage) { %> active <%}%>>"
+                class="nav-link <% if (page === activePage) { %> active <%}%>>"
                 aria-current="page"
                 href="/<%= page %>"
                 ><%= page %></a
               >
             </li>
+            <%}%>
             <%}); %>
           </ul>
         </div>

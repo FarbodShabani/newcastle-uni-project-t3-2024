@@ -1,4 +1,15 @@
 
 <%- include('./partials/header'); %>
-Show Page <%= invoiceId %>
+<div class="main-container">
+    <h3 class="text-center"> Please select one of the action bellow. </h3>
+
+    <div class="home-button-container" >
+        <% showOptions.forEach(option => { %>
+           
+            <button type="button" class="btn btn-primary btn-lg home-button"  onclick="onChooseShowOptionClick(`<%= option %>`)"><%= option %></button>
+            <input type="hidden" id="invoice-id" value="<%= invoiceId %>"/>
+        <%});%>
+    </div>
+    
+        </div>
 <%- include('./partials/footer'); %>

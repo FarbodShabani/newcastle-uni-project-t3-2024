@@ -1,5 +1,6 @@
 const formElements = require("../utils/invoiceForm");
 const pagesList = require("../utils/pageList");
+const showOptions = require("../utils/show");
 
 
 
@@ -30,10 +31,11 @@ const aboutUsPageController = (req, res) => res.render(pagesList[4], {
     activePage: pagesList[4]
 });
 
-const showPageController = (req, res) => res.render('show', {
+const showPageController = (req, res) => res.render(pagesList[5], {
     pagesList,
-    activePage: "Show",
+    activePage: pagesList[5],
     invoiceId: req.query.id,
+    showOptions,
 });
 
 

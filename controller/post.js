@@ -1,28 +1,60 @@
-const invoice = require("../model/invoice");
+
+const Invoice = require("../model/invoice");
+const pagesList = require("../utils/pageList");
+const createPDF = require("../utils/PDF");
+const showOptions = require("../utils/show");
 
 const uploadInvoiceController = (req, res) => {
-  return res.redirect("./show");
+  return res.redirect(`./${pagesList[5]}`);
 };
 
 const reciveJsonFormInvoice = async (req, res) => {
   const body = req.body;
-    
-    try {
-        
 
-        const newInvoice = new invoice(body);
-        await newInvoice.save();
-        console.log(newInvoice);
-        
-        return res.redirect("/show/?id=" + newInvoice._id);            
-        } catch (error) {
-            console.log(error);
-            return res.status(504).json({
-                message: "Something went wrong",
-              });
-        }
-
-
+  try {
+    const newInvoice = new Invoice(body);
+    await newInvoice.save();
+    return res.redirect(`/${pagesList[5]}/?id=` + newInvoice._id);
+  } catch (error) {
+    console.log(error);
+    return res.status(504).json({
+      message: "Something went wrong",
+    });
+  }
 };
 
-module.exports = { uploadInvoiceController, reciveJsonFormInvoice };
+const showingInvoicing = async (req, res) => {
+
+  const {showOption, invoiceId} = req.body;
+
+  try {
+
+    console.log("invoiceID: ", invoiceId);
+    const invoice = await Invoice.findById(invoiceId)
+    
+    switch (showOptions) {
+      case showOptions[0]:
+        
+    return res.json(showOption);
+        break;
+        case showOptions[1]:
+
+        return res.json(showOption);
+        break;
+        case showOptions[2]: 
+      default:
+        createPDF(invoice); 
+      return res.json(invoice);
+        break;
+    }
+
+  } catch (error) {
+    console.log(error);
+    return res.status(504).json({
+      message: "Something went wrong",
+    });
+  }
+
+}
+
+module.exports = { uploadInvoiceController, reciveJsonFormInvoice, showingInvoicing };

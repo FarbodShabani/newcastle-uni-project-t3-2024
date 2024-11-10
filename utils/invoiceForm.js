@@ -36,8 +36,8 @@ const formElements = [
                 inputId: "SE",
             },
             {
-                name: "Supplier’s MSIC Code",
-                inputId: "SMC",
+                name: "Supplier’s MISC Code",
+                inputId: "SMISC",
             },
             {
                 name: "Supplier’s Business Activity",
@@ -259,6 +259,7 @@ const formElements = [
         ]
     },
 ];
+
 
 
 
