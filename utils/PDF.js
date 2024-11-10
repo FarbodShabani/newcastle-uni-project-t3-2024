@@ -1,6 +1,7 @@
 const path = require("path");
 const fs = require("fs");
 const PDFDocument = require("pdfkit");
+const createQrCode = require("./qrCode");
 
 const rootDir = path.dirname(process.mainModule.filename);
 const createPDF = async (data, res) => {
@@ -304,7 +305,13 @@ const createPDF = async (data, res) => {
   .text(`Date and Time of validation: ${data?.DATOV ? data?.DATOV : "N/A"}`,{
    align: "left",
    height: 10,
-  }).moveDown();
+  });
+
+  doc.moveUp();
+  const qrCode = await createQrCode(data._id);
+
+  doc.image(qrCode, 480 , 365 , {width: 50});
+
 
   doc.end();
 };
