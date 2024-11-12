@@ -8,8 +8,11 @@
            
             <button type="button" class="btn btn-primary btn-lg home-button"  onclick="onChooseShowOptionClick(`<%= option %>`)"><%= option %></button>
             <input type="hidden" id="invoice-id" value="<%= invoiceId %>"/>
-        <%});%>
-    </div>
-    
+            <%});%>
         </div>
+        
+    </div>
+    <% invoiceDetails.forEach(detail => { %>
+    <input type="hidden" class="invoice-detail" id=<%= detail.id %> value=`<%= detail.value %>` />
+    <%});%>
 <%- include('./partials/footer'); %>

@@ -1,14 +1,18 @@
-const invoiceId = document.getElementById("invoice-id").value; 
- 
- const  onChooseShowOptionClick = async (showOption) => {
-    try {
+const invoiceId = document.getElementById("invoice-id").value;
 
-        const response = axios.post('/show', {
-            showOption,
-            invoiceId
-          });
-        
-    } catch (error) {
-        
-    }
- }
+
+const onChooseShowOptionClick = async (showOption) => {
+  try {
+
+      // const response = axios.post('/show', {
+      //     showOption,
+      //     invoiceId
+      //   });
+
+  } catch (error) {
+
+  }
+
+  download();
+
+}

@@ -1,3 +1,4 @@
+const Invoice = require("../model/invoice");
 const formElements = require("../utils/invoiceForm");
 const pagesList = require("../utils/pageList");
 const showOptions = require("../utils/show");
@@ -31,12 +32,25 @@ const aboutUsPageController = (req, res) => res.render(pagesList[4], {
     activePage: pagesList[4]
 });
 
-const showPageController = (req, res) => res.render(pagesList[5], {
+const showPageController = async (req, res) => {
+    
+    const fetchInvoice = await Invoice.findById(req.query.id);
+    let invoiceDetails = [];
+    for(let field in fetchInvoice) {
+        
+        invoiceDetails.push({
+            id: field,
+            value: fetchInvoice[field],
+        });
+    }
+    
+    res.render(pagesList[5], {
     pagesList,
     activePage: pagesList[5],
     invoiceId: req.query.id,
     showOptions,
-});
+    invoiceDetails 
+})};
 
 
 
