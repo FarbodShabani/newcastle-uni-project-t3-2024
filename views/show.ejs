@@ -13,6 +13,6 @@
         
     </div>
     <% invoiceDetails.forEach(detail => { %>
-    <input type="hidden" class="invoice-detail" id=<%= detail.id %> value=`<%= detail.value %>` />
+    <input type="hidden" class="invoice-detail" id=<%= detail.id %> value=<%= detail.value %> />
     <%});%>
 <%- include('./partials/footer'); %>
