@@ -1,4 +1,4 @@
-const showOptions = ["email", "browser", "download"];
+const showOptions = ["email", "download"];
 
 
 
