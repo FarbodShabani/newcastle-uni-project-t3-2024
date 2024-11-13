@@ -39,8 +39,7 @@ const showingInvoicing = async (req, res) => {
     switch (showOption) {
       case showOptions[0]:
           await createPDF(invoice); 
-          await sendMail(SE, SNID);
-          await sendMail(BE, BNID);
+          await sendMail(SE, BE);
         return res.json(showOption);
         break;
         case showOptions[1]: 

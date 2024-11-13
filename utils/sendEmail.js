@@ -15,16 +15,14 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const sendMail = (reciverEmail, reciverName) => {
+const sendMail = (supplierEmail, buyerEmail) => {
   // Configure the mailoptions object
   const mailOptions = {
     from: "newcastleuniversity@edu.au",
-    to: [reciverEmail],
+    to: [supplierEmail, buyerEmail],
     subject: "Sending Invoice",
     text:
-      "Hi dear " +
-      reciverName +
-      "\nThis email sent to you regarding to your request for sending a copy of the invoice to you. The pdf is attach to this email. The pdf has Qrcode that you can use to redirect to our website.\nBest Regards\nTeam No.1",
+      "Hi\nThis email sent to you regarding to your request for sending a copy of the invoice to you. The pdf is attach to this email. The pdf has Qrcode that you can use to redirect to our website.\nBest Regards\nTeam No.1",
     attachments: [
       {
         filename: "file.pdf",
