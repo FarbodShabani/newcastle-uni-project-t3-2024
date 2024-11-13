@@ -2,6 +2,7 @@
 const Invoice = require("../model/invoice");
 const pagesList = require("../utils/pageList");
 const createPDF = require("../utils/PDF");
+const sendMail = require("../utils/sendEmail");
 const showOptions = require("../utils/show");
 
 const uploadInvoiceController = (req, res) => {
@@ -31,19 +32,19 @@ const showingInvoicing = async (req, res) => {
 
     console.log("invoiceID: ", invoiceId);
     const invoice = await Invoice.findById(invoiceId)
+    const {SE, BE, SNID, BNID} = invoice;
+    console.log(SE, BE);
     
-    switch (showOptions) {
+    
+    switch (showOption) {
       case showOptions[0]:
-        
-    return res.json(showOption);
-        break;
-        case showOptions[1]:
-
+          await createPDF(invoice); 
+          await sendMail(SE, SNID);
+          await sendMail(BE, BNID);
         return res.json(showOption);
         break;
-        case showOptions[2]: 
+        case showOptions[1]: 
       default:
-        createPDF(invoice); 
       return res.json(invoice);
         break;
     }
