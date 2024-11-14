@@ -102,11 +102,11 @@ const scanXml = async (fileName) => {
       sPInfo["ram:PostalTradeAddress"]["ram:CityName"] +
       " " +
       sPInfo["ram:PostalTradeAddress"]["ram:CountryID"];
-    invoiceData.SE = "farbod1999@yahoo.com"; // The XML file must have this field in order we send a copy of invoice with email.
+   // The XML file must have this field in order we send a copy of invoice with email.
     invoiceData.BNID = bPInfo["ram:Name"];
     invoiceData.BSRN = bPInfo["ram:GlobalID"]["#text"];
     invoiceData.BT = bPInfo["ram:SpecifiedTaxRegistration"]["ram:ID"]["#text"];
-    invoiceData.BE = "shabani.farbod@yahoo.com"; // The XML file must have this field in order we send a copy of invoice with email.
+ // The XML file must have this field in order we send a copy of invoice with email.
     invoiceData.BA =
       bPInfo["ram:PostalTradeAddress"]["ram:LineOne"] +
       " " +
