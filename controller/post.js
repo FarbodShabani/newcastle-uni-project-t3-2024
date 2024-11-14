@@ -11,7 +11,6 @@ const uploadInvoiceController = async (req, res) => {
   const extractInvoiceData = await scanXml(fileName);
   const newInvoice = new Invoice(extractInvoiceData);
   await newInvoice.save();
-  return res.json(extractInvoiceData);
   return res.redirect(`/${pagesList[5]}/?id=` + newInvoice._id);
 };
 
