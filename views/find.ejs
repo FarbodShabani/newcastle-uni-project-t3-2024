@@ -1,4 +1,15 @@
 
 <%- include('./partials/header'); %>
-Find Page
+<div class="main-container">
+    <h2 class="mt-n1 text-center">Please write your reference code here</h2>
+    <form action="/invoice" method="GET" class="d-flex flex-column justify-content-start align-items-center w-80" >
+      <div class="input-group mb-3">
+          <label class="input-group-text" for="invoice">Invoice code</label>
+        <input type="text" class="form-control" id="invoice" name="invoice"/>
+      </div>
+      <button class="btn btn-primary btn-lg home-button" type="submit" >
+          get
+      </button>
+    </form>
+  </div>
 <%- include('./partials/footer'); %>
