@@ -3,11 +3,11 @@ const formElements = [
         subGroupName: "Party Details",
         inputsList: [
             {
-                name: "Supplier’s Name",
+                name: "Supplier’s Name",//
                 inputId: "SNID",
             },
             {
-                name: "Buyer’s Name",
+                name: "Buyer’s Name",//
                 inputId: "BNID",
             },
         ]
@@ -16,31 +16,31 @@ const formElements = [
         subGroupName: "Supplier’s Information",
         inputsList: [
             {
-                name: "Supplier’s TIN",
+                name: "Supplier’s TIN",//
                 inputId: "STIN",
             },
             {
-                name: "Supplier’s Registration Number",
+                name: "Supplier’s Registration Number",//
                 inputId: "SRN",
             },
             {
-                name: "Supplier’s SST  Number",
+                name: "Supplier’s SST  Number",//x
                 inputId: "SSSTN",
             },
             {
-                name: "Supplier’s Tourism Tax Registration Number",
+                name: "Supplier’s Tourism Tax Registration Number",//x
                 inputId: "STTRN",
             },
             {
-                name: "Supplier’s Email",
+                name: "Supplier’s Email",//
                 inputId: "SE",
             },
             {
-                name: "Supplier’s MISC Code",
+                name: "Supplier’s MISC Code",//x
                 inputId: "SMISC",
             },
             {
-                name: "Supplier’s Business Activity",
+                name: "Supplier’s Business Activity",//
                 inputId: "SBA",
             },
         ]
@@ -49,19 +49,19 @@ const formElements = [
         subGroupName: "Buyer’s Information",
         inputsList: [
             {
-                name: "Buyer’s TIN",
+                name: "Buyer’s TIN",//
                 inputId: "BT",
             },
             {
-                name: "Buyer’s Registration Number",
+                name: "Buyer’s Registration Number",//
                 inputId: "BSRN",
             },
             {
-                name: "Buyer’s SST  Number",
+                name: "Buyer’s SST  Number",//x
                 inputId: "BSSTN",
             },
             {
-                name: "Buyer’s Email",
+                name: "Buyer’s Email",//
                 inputId: "BE",
             },
         ]
@@ -70,11 +70,11 @@ const formElements = [
         subGroupName: "Address Information",
         inputsList: [
             {
-                name: "Supplier’s Address",
+                name: "Supplier’s Address",//
                 inputId: "SA",
             },
             {
-                name: "Buyer’s Address",
+                name: "Buyer’s Address",//
                 inputId: "BA",
             },
         ]
@@ -83,11 +83,11 @@ const formElements = [
         subGroupName: "Contact  Information",
         inputsList: [
             {
-                name: "Supplier’s Contact Number",
+                name: "Supplier’s Contact Number",//x
                 inputId: "SCN",
             },
             {
-                name: "Buyer’s Contact Number",
+                name: "Buyer’s Contact Number",//x
                 inputId: "BCN",
             },
         ]
@@ -96,47 +96,47 @@ const formElements = [
         subGroupName: "Invoice Details",
         inputsList: [
             {
-                name: "e-Invoice Version",
+                name: "e-Invoice Version",//
                 inputId: "EIV",
             },
             {
-                name: "e-Invoice Type",
+                name: "e-Invoice Type",//
                 inputId: "EIT",
             },
             {
-                name: "e-Invoice Code",
+                name: "e-Invoice Code",//
                 inputId: "EIC",
             },
             {
-                name: "Original e-Invoice Reference Number",
+                name: "Original e-Invoice Reference Number",//
                 inputId: "OEIRN",
             },
             {
-                name: "e-Invoice Date and Time",
+                name: "e-Invoice Date and Time",//
                 inputId: "EIDAT",
             },
             {
-                name: "Date and Time of Validation",
+                name: "Date and Time of Validation",//
                 inputId: "DATOV",
             },
             {
-                name: "Issuer’s Digital Signature",
+                name: "Issuer’s Digital Signature",//x
                 inputId: "IDS",
             },
             {
-                name: "Invoice Currency Code",
+                name: "Invoice Currency Code",//
                 inputId: "ICC",
             },
             {
-                name: "Currency Exchange Rate",
+                name: "Currency Exchange Rate",//x
                 inputId: "CER",
             },
             {
-                name: "Frequency of Billing",
+                name: "Frequency of Billing",//x
                 inputId: "FOB",
             },
             {
-                name: "Billing Period",
+                name: "Billing Period",//
                 inputId: "BP",
             },
         ]
@@ -145,7 +145,7 @@ const formElements = [
         subGroupName: "Unique Identification",
         inputsList: [
             {
-                name: "IRBM Unique Number",
+                name: "IRBM Unique Number",//x
                 inputId: "IRBMUN",
             },
         ]
@@ -154,16 +154,16 @@ const formElements = [
         subGroupName: "Products/Services Details",
         inputsList: [
             {
-                name: "Classification",
+                name: "Classification",//x
                 inputId: "CFI",
             },
             {
-                name: "Description of Product or Service",
+                name: "Description of Product or Service",//x
                 inputId: "DOPOS",
             },
             {
                 name: "Unit Price",
-                inputId: "UP",
+                inputId: "UP",//x
             },
             {
                 name: "Quantity",
@@ -259,6 +259,7 @@ const formElements = [
         ]
     },
 ];
+
 
 
 

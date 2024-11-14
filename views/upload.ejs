@@ -1,10 +1,10 @@
 <%- include('./partials/header'); %>
 <div class="main-container">
   <h2 class="mt-n1 text-center">Please upload your document</h2>
-  <form action="/upload" method="POST" class="d-flex flex-column justify-content-start align-items-center w-80">
+  <form action="/upload" method="POST" class="d-flex flex-column justify-content-start align-items-center w-80" enctype="multipart/form-data">
     <div class="input-group mb-3">
-      <input type="file" class="form-control" id="inputGroupFile02" />
-      <label class="input-group-text" for="inputGroupFile02">Upload</label>
+      <input type="file" class="form-control" id="invoice" name="invoice"/>
+      <label class="input-group-text" for="invoice">Upload</label>
     </div>
     <button class="btn btn-primary btn-lg home-button" type="submit" >
         Upload the invoice

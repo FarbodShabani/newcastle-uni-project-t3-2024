@@ -2,11 +2,17 @@
 const Invoice = require("../model/invoice");
 const pagesList = require("../utils/pageList");
 const createPDF = require("../utils/PDF");
+const scanXml = require("../utils/scanXML");
 const sendMail = require("../utils/sendEmail");
 const showOptions = require("../utils/show");
 
-const uploadInvoiceController = (req, res) => {
-  return res.redirect(`./${pagesList[5]}`);
+const uploadInvoiceController = async (req, res) => {
+  const fileName = req?.file?.originalname;
+  const extractInvoiceData = await scanXml(fileName);
+  const newInvoice = new Invoice(extractInvoiceData);
+  await newInvoice.save();
+  return res.json(extractInvoiceData);
+  return res.redirect(`/${pagesList[5]}/?id=` + newInvoice._id);
 };
 
 const reciveJsonFormInvoice = async (req, res) => {
@@ -30,9 +36,8 @@ const showingInvoicing = async (req, res) => {
 
   try {
 
-    console.log("invoiceID: ", invoiceId);
     const invoice = await Invoice.findById(invoiceId)
-    const {SE, BE, SNID, BNID} = invoice;
+    const {SE, BE} = invoice;
     console.log(SE, BE);
     
     

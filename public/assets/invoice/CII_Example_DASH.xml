@@ -1,0 +1,280 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rsm:CrossIndustryInvoice xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:qdt="urn:un:unece:uncefact:data:standard:QualifiedDataType:100" xmlns:udt="urn:un:unece:uncefact:data:standard:UnqualifiedDataType:100" xmlns:rsm="urn:un:unece:uncefact:data:standard:CrossIndustryInvoice:100" xmlns:ram="urn:un:unece:uncefact:data:standard:ReusableAggregateBusinessInformationEntity:100">
+<rsm:ExchangedDocumentContext>
+<ram:GuidelineSpecifiedDocumentContextParameter>
+<ram:ID>urn:cen.eu:en16931:2017#conformant#urn:factur-x.eu:1p0:extended</ram:ID>
+</ram:GuidelineSpecifiedDocumentContextParameter>
+</rsm:ExchangedDocumentContext>
+<rsm:ExchangedDocument>
+<ram:ID>24062513</ram:ID>
+<ram:TypeCode>380</ram:TypeCode>
+<ram:IssueDateTime>
+<udt:DateTimeString format="102">20150428</udt:DateTimeString>
+</ram:IssueDateTime>
+<ram:IncludedNote>
+<ram:Content>AFTER PAYMENT CLICK HERE: https://www.google.com/ </ram:Content>
+<ram:SubjectCode>AAI</ram:SubjectCode>
+</ram:IncludedNote>
+<ram:IncludedNote>
+<ram:Content>EBUSINESS SOFTWARE FRANCESOCIETE ANONYMECAPITAL SOCIAL 914694,10 EURB 412193567</ram:Content>
+<ram:SubjectCode>REG</ram:SubjectCode>
+</ram:IncludedNote>
+</rsm:ExchangedDocument>
+<rsm:SupplyChainTradeTransaction>
+<ram:IncludedSupplyChainTradeLineItem>
+<ram:AssociatedDocumentLineDocument>
+<ram:LineID>1</ram:LineID>
+</ram:AssociatedDocumentLineDocument>
+<ram:SpecifiedTradeProduct>
+<ram:GlobalID schemeID="IN">9665210780</ram:GlobalID>
+<ram:SellerAssignedID>PGT0101021</ram:SellerAssignedID>
+<ram:BuyerAssignedID>9665210780</ram:BuyerAssignedID>
+<ram:Name>TPC JACINTHE ROUGE 16  SERIE</ram:Name>
+</ram:SpecifiedTradeProduct>
+<ram:SpecifiedLineTradeAgreement>
+<ram:BuyerOrderReferencedDocument>
+<ram:IssuerAssignedID>87060670</ram:IssuerAssignedID>
+</ram:BuyerOrderReferencedDocument>
+<ram:NetPriceProductTradePrice>
+<ram:ChargeAmount>4.4900</ram:ChargeAmount>
+<ram:BasisQuantity unitCode="C62">1.00</ram:BasisQuantity>
+</ram:NetPriceProductTradePrice>
+</ram:SpecifiedLineTradeAgreement>
+<ram:SpecifiedLineTradeDelivery>
+<ram:BilledQuantity unitCode="C62">72.00</ram:BilledQuantity>
+<ram:ShipToTradeParty>
+<ram:ID>U9 QCD</ram:ID>
+<ram:GlobalID schemeID="0151">000235100558200017</ram:GlobalID>
+<ram:Name>PCA SA</ram:Name>
+<ram:PostalTradeAddress>
+<ram:LineOne>MAGASIN LA</ram:LineOne>
+<ram:LineTwo>ZI NR 3</ram:LineTwo>
+<ram:LineThree>59111 LIEU ST AMAND</ram:LineThree>
+</ram:PostalTradeAddress>
+</ram:ShipToTradeParty>
+<ram:ActualDeliverySupplyChainEvent>
+<ram:OccurrenceDateTime>
+<udt:DateTimeString format="102">20150428</udt:DateTimeString>
+</ram:OccurrenceDateTime>
+</ram:ActualDeliverySupplyChainEvent>
+<ram:DespatchAdviceReferencedDocument>
+<ram:IssuerAssignedID>7181814</ram:IssuerAssignedID>
+</ram:DespatchAdviceReferencedDocument>
+</ram:SpecifiedLineTradeDelivery>
+<ram:SpecifiedLineTradeSettlement>
+<ram:ApplicableTradeTax>
+<ram:TypeCode>GST</ram:TypeCode>
+<ram:CategoryCode>S</ram:CategoryCode>
+<ram:RateApplicablePercent>10.00</ram:RateApplicablePercent>
+</ram:ApplicableTradeTax>
+<ram:SpecifiedTradeSettlementLineMonetarySummation>
+<ram:LineTotalAmount>323.28</ram:LineTotalAmount>
+</ram:SpecifiedTradeSettlementLineMonetarySummation>
+</ram:SpecifiedLineTradeSettlement>
+</ram:IncludedSupplyChainTradeLineItem>
+<ram:IncludedSupplyChainTradeLineItem>
+<ram:AssociatedDocumentLineDocument>
+<ram:LineID>2</ram:LineID>
+</ram:AssociatedDocumentLineDocument>
+<ram:SpecifiedTradeProduct>
+<ram:GlobalID schemeID="IN">9665210780</ram:GlobalID>
+<ram:SellerAssignedID>PGT0101021</ram:SellerAssignedID>
+<ram:BuyerAssignedID>9665210780</ram:BuyerAssignedID>
+<ram:Name>TPC JACINTHE ROUGE 16  SERIE</ram:Name>
+</ram:SpecifiedTradeProduct>
+<ram:SpecifiedLineTradeAgreement>
+<ram:BuyerOrderReferencedDocument>
+<ram:IssuerAssignedID>87060670</ram:IssuerAssignedID>
+</ram:BuyerOrderReferencedDocument>
+<ram:NetPriceProductTradePrice>
+<ram:ChargeAmount>4.4900</ram:ChargeAmount>
+<ram:BasisQuantity unitCode="C62">1.00</ram:BasisQuantity>
+</ram:NetPriceProductTradePrice>
+</ram:SpecifiedLineTradeAgreement>
+<ram:SpecifiedLineTradeDelivery>
+<ram:BilledQuantity unitCode="C62">72.00</ram:BilledQuantity>
+<ram:ShipToTradeParty>
+<ram:ID>U9 QCD</ram:ID>
+<ram:GlobalID schemeID="0151">000235100558200017</ram:GlobalID>
+<ram:Name>PCA SA</ram:Name>
+<ram:PostalTradeAddress>
+<ram:LineOne>MAGASIN LA</ram:LineOne>
+<ram:LineTwo>ZI NR 3</ram:LineTwo>
+<ram:LineThree>59111 LIEU ST AMAND</ram:LineThree>
+</ram:PostalTradeAddress>
+</ram:ShipToTradeParty>
+<ram:ActualDeliverySupplyChainEvent>
+<ram:OccurrenceDateTime>
+<udt:DateTimeString format="102">20150428</udt:DateTimeString>
+</ram:OccurrenceDateTime>
+</ram:ActualDeliverySupplyChainEvent>
+<ram:DespatchAdviceReferencedDocument>
+<ram:IssuerAssignedID>7181814</ram:IssuerAssignedID>
+</ram:DespatchAdviceReferencedDocument>
+</ram:SpecifiedLineTradeDelivery>
+<ram:SpecifiedLineTradeSettlement>
+<ram:ApplicableTradeTax>
+<ram:TypeCode>GST</ram:TypeCode>
+<ram:CategoryCode>S</ram:CategoryCode>
+<ram:RateApplicablePercent>10.00</ram:RateApplicablePercent>
+</ram:ApplicableTradeTax>
+<ram:SpecifiedTradeSettlementLineMonetarySummation>
+<ram:LineTotalAmount>323.28</ram:LineTotalAmount>
+</ram:SpecifiedTradeSettlementLineMonetarySummation>
+</ram:SpecifiedLineTradeSettlement>
+</ram:IncludedSupplyChainTradeLineItem>
+<ram:IncludedSupplyChainTradeLineItem>
+<ram:AssociatedDocumentLineDocument>
+<ram:LineID>3</ram:LineID>
+</ram:AssociatedDocumentLineDocument>
+<ram:SpecifiedTradeProduct>
+<ram:GlobalID schemeID="IN">9665210780</ram:GlobalID>
+<ram:SellerAssignedID>PGT0101021</ram:SellerAssignedID>
+<ram:BuyerAssignedID>9665210780</ram:BuyerAssignedID>
+<ram:Name>TPC JACINTHE ROUGE 16  SERIE</ram:Name>
+</ram:SpecifiedTradeProduct>
+<ram:SpecifiedLineTradeAgreement>
+<ram:BuyerOrderReferencedDocument>
+<ram:IssuerAssignedID>87060670</ram:IssuerAssignedID>
+</ram:BuyerOrderReferencedDocument>
+<ram:NetPriceProductTradePrice>
+<ram:ChargeAmount>4.4900</ram:ChargeAmount>
+<ram:BasisQuantity unitCode="C62">1.00</ram:BasisQuantity>
+</ram:NetPriceProductTradePrice>
+</ram:SpecifiedLineTradeAgreement>
+<ram:SpecifiedLineTradeDelivery>
+<ram:BilledQuantity unitCode="C62">72.00</ram:BilledQuantity>
+<ram:ShipToTradeParty>
+<ram:ID>U9 QCD</ram:ID>
+<ram:GlobalID schemeID="0151">000235100558200017</ram:GlobalID>
+<ram:Name>PCA SA</ram:Name>
+<ram:PostalTradeAddress>
+<ram:LineOne>MAGASIN LA</ram:LineOne>
+<ram:LineTwo>ZI NR 3</ram:LineTwo>
+<ram:LineThree>59111 LIEU ST AMAND</ram:LineThree>
+</ram:PostalTradeAddress>
+</ram:ShipToTradeParty>
+<ram:ActualDeliverySupplyChainEvent>
+<ram:OccurrenceDateTime>
+<udt:DateTimeString format="102">20150428</udt:DateTimeString>
+</ram:OccurrenceDateTime>
+</ram:ActualDeliverySupplyChainEvent>
+<ram:DespatchAdviceReferencedDocument>
+<ram:IssuerAssignedID>7181814</ram:IssuerAssignedID>
+</ram:DespatchAdviceReferencedDocument>
+</ram:SpecifiedLineTradeDelivery>
+<ram:SpecifiedLineTradeSettlement>
+<ram:ApplicableTradeTax>
+<ram:TypeCode>GST</ram:TypeCode>
+<ram:CategoryCode>S</ram:CategoryCode>
+<ram:RateApplicablePercent>10.00</ram:RateApplicablePercent>
+</ram:ApplicableTradeTax>
+<ram:SpecifiedTradeSettlementLineMonetarySummation>
+<ram:LineTotalAmount>323.28</ram:LineTotalAmount>
+</ram:SpecifiedTradeSettlementLineMonetarySummation>
+</ram:SpecifiedLineTradeSettlement>
+</ram:IncludedSupplyChainTradeLineItem>
+<ram:ApplicableHeaderTradeAgreement>
+<ram:SellerTradeParty>
+<ram:ID>74737K</ram:ID>
+<ram:GlobalID schemeID="0151">80647710156</ram:GlobalID>
+<ram:Name>EBUSINESS SOFTWARE SERVICES PTY LTD</ram:Name>
+<ram:Description>EBUSINESS SOFTWARE FRANCE SOCIETE ANONYME CAPITAL SOCIAL 914694,10 EUR</ram:Description>
+<ram:PostalTradeAddress>
+<ram:PostcodeCode>2203</ram:PostcodeCode>
+<ram:LineOne>100 BUSINESS ST </ram:LineOne>
+<ram:LineTwo>2203 DULWICH HILL</ram:LineTwo>
+<ram:CityName>DULWICH HILL</ram:CityName>
+<ram:CountryID>AU</ram:CountryID>
+</ram:PostalTradeAddress>
+<ram:URIUniversalCommunication>
+<ram:URIID schemeID="AN">0002412193567ZANFRD</ram:URIID>
+</ram:URIUniversalCommunication>
+<ram:SpecifiedTaxRegistration>
+<ram:ID schemeID="VA">FR75412193567</ram:ID>
+</ram:SpecifiedTaxRegistration>
+</ram:SellerTradeParty>
+<ram:BuyerTradeParty>
+<ram:GlobalID schemeID="0151">86160051696</ram:GlobalID>
+<ram:Name>AWOLAKO ENTERPRISES PTY LTD</ram:Name>
+<ram:PostalTradeAddress>
+<ram:PostcodeCode>2140</ram:PostcodeCode>
+<ram:LineOne>SUITE 123 LEVEL 45</ram:LineOne>
+<ram:LineTwo>2140 HOMEBUSH WEST</ram:LineTwo>
+<ram:CityName>HOMEBUSH WEST</ram:CityName>
+<ram:CountryID>AU</ram:CountryID>
+</ram:PostalTradeAddress>
+<ram:URIUniversalCommunication>
+<ram:URIID schemeID="AN">1351005582SNIR</ram:URIID>
+</ram:URIUniversalCommunication>
+<ram:SpecifiedTaxRegistration>
+<ram:ID schemeID="VA">FR84351005582</ram:ID>
+</ram:SpecifiedTaxRegistration>
+</ram:BuyerTradeParty>
+<ram:SellerTaxRepresentativeTradeParty>
+<ram:Name>EBUSINESS SOFTWARE SERVICES PTY LTD</ram:Name>
+<ram:PostalTradeAddress>
+<ram:CountryID>AU</ram:CountryID>
+</ram:PostalTradeAddress>
+<ram:SpecifiedTaxRegistration>
+<ram:ID schemeID="VA">FR75412193567</ram:ID>
+</ram:SpecifiedTaxRegistration>
+</ram:SellerTaxRepresentativeTradeParty>
+<ram:BuyerOrderReferencedDocument>
+<ram:IssuerAssignedID>87060670</ram:IssuerAssignedID>
+</ram:BuyerOrderReferencedDocument>
+</ram:ApplicableHeaderTradeAgreement>
+<ram:ApplicableHeaderTradeDelivery>
+<ram:ShipToTradeParty>
+<ram:GlobalID schemeID="0151">000235100558200017</ram:GlobalID>
+<ram:Name>PCA SA</ram:Name>
+<ram:PostalTradeAddress>
+<ram:LineOne>MAGASIN LA</ram:LineOne>
+<ram:LineTwo>ZI NR 3</ram:LineTwo>
+<ram:LineThree>59111 LIEU ST AMAND</ram:LineThree>
+</ram:PostalTradeAddress>
+</ram:ShipToTradeParty>
+<ram:ActualDeliverySupplyChainEvent>
+<ram:OccurrenceDateTime>
+<udt:DateTimeString format="102">20150428</udt:DateTimeString>
+</ram:OccurrenceDateTime>
+</ram:ActualDeliverySupplyChainEvent>
+<ram:DespatchAdviceReferencedDocument>
+<ram:IssuerAssignedID>7181814</ram:IssuerAssignedID>
+</ram:DespatchAdviceReferencedDocument>
+</ram:ApplicableHeaderTradeDelivery>
+<ram:ApplicableHeaderTradeSettlement>
+<ram:InvoiceCurrencyCode>AUD</ram:InvoiceCurrencyCode>
+<ram:InvoiceeTradeParty>
+<ram:GlobalID schemeID="0151">0002351005582</ram:GlobalID>
+<ram:Name>PCA SA</ram:Name>
+<ram:PostalTradeAddress>
+<ram:PostcodeCode>78091</ram:PostcodeCode>
+<ram:LineOne>C/O COMPTABILITE FOURNISSEURS</ram:LineOne>
+<ram:LineTwo>78091 YVELINES CEDEX 9</ram:LineTwo>
+<ram:CityName>YVELINES CEDEX 9</ram:CityName>
+<ram:CountryID>FR</ram:CountryID>
+</ram:PostalTradeAddress>
+</ram:InvoiceeTradeParty>
+<ram:ApplicableTradeTax>
+<ram:CalculatedAmount>96.98</ram:CalculatedAmount>
+<ram:TypeCode>GST</ram:TypeCode>
+<ram:BasisAmount>969.84</ram:BasisAmount>
+<ram:CategoryCode>S</ram:CategoryCode>
+<ram:RateApplicablePercent>10</ram:RateApplicablePercent>
+</ram:ApplicableTradeTax>
+<ram:SpecifiedTradePaymentTerms>
+<ram:DueDateDateTime>
+<udt:DateTimeString format="102">20150615</udt:DateTimeString>
+</ram:DueDateDateTime>
+</ram:SpecifiedTradePaymentTerms>
+<ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+<ram:LineTotalAmount>969.84</ram:LineTotalAmount>
+<ram:TaxBasisTotalAmount>969.84</ram:TaxBasisTotalAmount>
+<ram:TaxTotalAmount currencyID="AUD">96.98</ram:TaxTotalAmount>
+<ram:GrandTotalAmount>1066.82</ram:GrandTotalAmount>
+<ram:DuePayableAmount>1066.82</ram:DuePayableAmount>
+</ram:SpecifiedTradeSettlementHeaderMonetarySummation>
+</ram:ApplicableHeaderTradeSettlement>
+</rsm:SupplyChainTradeTransaction>
+</rsm:CrossIndustryInvoice>
